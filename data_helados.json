@@ -1,0 +1,17 @@
+[
+  {
+    "imagen": "./assets/img/helado-de-chocolate-cacao-receta.webp",
+    "nombre": "Chocolate",
+    "precio": 2.50
+  },
+  {
+    "imagen": "./assets/img/helado-de-vainilla.webp",
+    "nombre": "Vainilla",
+    "precio": 2.00
+  },
+  {
+    "imagen": "./assets/img/helado-de-fresa.webp",
+    "nombre": "Fresa",
+    "precio": 2.25
+  }
+]
