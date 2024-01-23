@@ -20,23 +20,35 @@ header {
         justify-content: flex-end;
         min-width: 32rem;
         max-width: 36rem;
+        width: 100%;
         position: absolute;
         top: 10rem;
-        left: 2rem;
     }
 
     video {
         position: absolute;
         top: 0;
         left: 0;
-        min-width: 32rem;
-        max-width: 36rem;
+        max-width: 100%;
         height: 100%;
         object-fit: cover;
         opacity: 0.5s;
         z-index: -1;
 
     }
+}
+nav{
+  background-color: aqua;
+  min-width: 32rem;
+  max-width: 36rem;
+  width: 100%;
+  margin: 0 auto;
+  .container_navegacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+  }
 }
 
 main {
