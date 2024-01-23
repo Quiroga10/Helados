@@ -42,12 +42,14 @@ nav{
   min-width: 32rem;
   max-width: 36rem;
   width: 100%;
+  height: 3rem;
   margin: 0 auto;
   .container_navegacion{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     list-style: none;
+    padding: 1rem;
   }
 }
 
