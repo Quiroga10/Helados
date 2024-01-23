@@ -18,8 +18,7 @@ header {
     h1 {
         display: flex;
         justify-content: flex-end;
-        min-width: 32rem;
-        max-width: 36rem;
+        max-width: 30rem;
         width: 100%;
         position: absolute;
         top: 10rem;
@@ -38,7 +37,7 @@ header {
     }
 }
 nav{
-  background-color: aqua;
+  background-color: #305757;
   min-width: 32rem;
   max-width: 36rem;
   width: 100%;
@@ -109,8 +108,8 @@ footer{
   max-width: 36rem;
   height: 12rem;
   display: flex;
-  background-color: cornsilk;
-  display: flex;
+  background-color: #305757;
+  color: white;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
