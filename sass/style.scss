@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body{
+  font-family: Roboto,sans-serif;
+  font-weight: 300;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -14,14 +19,13 @@ header {
     max-width: 36rem;
     margin: 0 auto;
     height: 40vh;
-
-    h1 {
-        display: flex;
-        justify-content: flex-end;
-        max-width: 30rem;
-        width: 100%;
+    border-bottom: 0.2px solid rgb(255, 255, 255);
+    img {
+        width: 12rem;
+        max-width: 100%;
         position: absolute;
-        top: 10rem;
+        top: 4rem;
+        left: 20rem;
     }
 
     video {
@@ -37,22 +41,27 @@ header {
     }
 }
 nav{
-  background-color: #305757;
+  background-color: #332d28;
   min-width: 32rem;
   max-width: 36rem;
   width: 100%;
-  height: 3rem;
+  height: 4rem;
   margin: 0 auto;
   .container_navegacion{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     list-style: none;
     padding: 1rem;
+    .navegacion_mobile{
+      display: flex;
+      justify-content: space-between;
+
+    }
+    .navegacion_opciones{
+      display: none;
+    }
     li{
       a{
         text-decoration: none;
-        color: white;
+        color: #b2b2b2;
         font-size: 1.2rem;
       }
     }
@@ -64,8 +73,55 @@ main {
     max-width: 36rem;
     height: auto;
     margin: 0 auto;
-    margin-top: 3rem;
     margin-bottom: 2rem;
+    .container_bienvenida{
+      max-width: 36rem;
+      height: 13rem;
+      display: flex;
+      place-items: center;
+      place-content: center;
+      font-family: 'great_vibesregular';
+      color: #fff;
+      font-style: normal;
+      text-shadow: 1px 1px 6px #000;
+      background-color: #90623c;
+      b{
+        white-space: nowrap;
+        font-weight: bolder;
+        font-size: 2.4rem;
+        line-height: 1.2;
+        letter-spacing: 0.2rem;
+        text-align: center;
+      }
+    }
+    .container_delivery{
+      max-width: 36rem;
+      height: 40rem;
+      background-color: #FFBA00;
+      .delivery{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 28rem;
+        height: 20rem;
+        margin: 0 auto;
+        h2{
+          margin-top: 4rem;
+          font-size: 2rem;
+          font-weight: 600;
+        }
+        .info_delivery{
+          width: 28rem;
+          margin: 0 auto;
+          P{
+            font-size: 2.8rem;
+            text-align: center;
+            line-height: 2;
+            color: white;
+          }
+        }
+      }
+    }
     h2{
       text-align: center;
     }
@@ -106,12 +162,32 @@ main {
 footer{
   min-width: 32rem;
   max-width: 36rem;
-  height: 12rem;
+  background-image: url("../assets/img/imagen_de_fondo_de_una_heladeria.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: bottom; 
+  background-color: rgb(20,10,8);
+  height: auto;
   display: flex;
-  background-color: #305757;
   color: white;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+  .container_footer{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    .info-contacto{
+      text-align: center;
+    }
+    .info-contacto, .ubicacion, .redes-sociales{
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
 }
