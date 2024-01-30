@@ -145,7 +145,7 @@ main {
     color: #fff;
     font-style: normal;
     text-shadow: 1px 1px 6px #000;
-    background-image: url("../assets/img/imagen_de_fondo_de_una_heladeria.jpg");
+    background-image: url("../assets/img/imagen_de_fondo_de_una_heladeria.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -162,7 +162,7 @@ main {
 
   .container_delivery {
     max-width: 36rem;
-    height: 84rem;
+    height: 74rem;
     background-color: #FFBA00;
     margin-bottom: 2rem;
 
@@ -173,11 +173,13 @@ main {
       margin: 0 auto;
       max-width: 36rem;
       height: auto;
+      font-family: 'poppinsregular';
 
       h2 {
         margin-top: 4rem;
         font-size: 2rem;
         font-weight: 600;
+        text-align: center;
       }
 
       P {
@@ -188,144 +190,271 @@ main {
       }
     }
 
-    .wrapper {
-      position: absolute;
-      top: 115%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: fit-content;
+    .button_imagen-delivery {
+      display: flex;
+      flex-direction: column;
       height: auto;
 
-      button {
-        width: 20rem;
-        height: 7rem;
-        background: linear-gradient(to left top, #c32c71 50%, #b33771 50%);
-        border-style: none;
-        color: #fff;
-        font-size: 2.3rem;
-        letter-spacing: 0.3rem;
-        font-family: 'Lato';
-        font-weight: 600;
-        outline: none;
-        cursor: pointer;
-        position: relative;
-        padding: 0px;
-        overflow: hidden;
-        transition: all .5s;
-        box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
+      .wrapper {
+        transform: translate(-50%, -50%);
+        width: 11rem;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 6rem;
 
-        &:hover {
-          transition: all .5s;
-          transform: rotate(-3deg) scale(1.1);
-          box-shadow: 0px 3px 5px rgba(0, 0, 0, .4);
-        }
-        span {
-          position: absolute;
-          display: block;
-        }
-        &:hover{
-          animation-play-state: paused;
-        }
-
-        span:nth-child(1) {
-          height: 0.3rem;
+        button {
           width: 20rem;
-          top: 0px;
-          left: -20rem;
-          background: linear-gradient(to right, rgba(0, 0, 0, 0), #F0EDCF);
-          border-top-right-radius: 1px;
-          border-bottom-right-radius: 1px;
-          animation: span1 2s linear infinite;
-          animation-delay: 1s;
-        }
-
-        @keyframes span1 {
-          0% {
-            left: -200px
-          }
-
-          100% {
-            left: 200px;
-          }
-        }
-
-        span:nth-child(2) {
           height: 7rem;
-          width: 0.3rem;
-          top: -7rem;
-          right: 0px;
-          background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #F0EDCF);
-          border-bottom-left-radius: 1px;
-          border-bottom-right-radius: 1px;
-          animation: span2 2s linear infinite;
-          animation-delay: 2s;
+          background: linear-gradient(to left top, #c32c71 50%, #b33771 50%);
+          border-style: none;
+          color: #fff;
+          font-size: 2.3rem;
+          letter-spacing: 0.3rem;
+          font-family: 'Lato';
+          font-weight: 600;
+          outline: none;
+          cursor: pointer;
+          position: relative;
+          padding: 0px;
+          overflow: hidden;
+          transition: all .5s;
+          box-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
 
-        }
-
-        @keyframes span2 {
-          0% {
-            top: -70px;
+          &:hover {
+            transition: all .5s;
+            transform: rotate(-3deg) scale(1.1);
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, .4);
           }
 
-          100% {
-            top: 70px;
+          span {
+            position: absolute;
+            display: block;
           }
-        }
 
-        span:nth-child(3) {
-          height: 3px;
-          width: 200px;
-          right: -200px;
-          bottom: 0px;
-          background: linear-gradient(to left, rgba(0, 0, 0, 0), #f6e58d);
-          border-top-left-radius: 1px;
-          border-bottom-left-radius: 1px;
-          animation: span3 2s linear infinite;
-          animation-delay: 3s;
-        }
+          &:hover {
+            animation-play-state: paused;
+          }
 
-        @keyframes span3 {
-          0% {
+          span:nth-child(1) {
+            height: 0.3rem;
+            width: 20rem;
+            top: 0px;
+            left: -20rem;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0), #F0EDCF);
+            border-top-right-radius: 1px;
+            border-bottom-right-radius: 1px;
+            animation: span1 2s linear infinite;
+            animation-delay: 1s;
+          }
+
+          @keyframes span1 {
+            0% {
+              left: -200px
+            }
+
+            100% {
+              left: 200px;
+            }
+          }
+
+          span:nth-child(2) {
+            height: 7rem;
+            width: 0.3rem;
+            top: -7rem;
+            right: 0px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #F0EDCF);
+            border-bottom-left-radius: 1px;
+            border-bottom-right-radius: 1px;
+            animation: span2 2s linear infinite;
+            animation-delay: 2s;
+
+          }
+
+          @keyframes span2 {
+            0% {
+              top: -70px;
+            }
+
+            100% {
+              top: 70px;
+            }
+          }
+
+          span:nth-child(3) {
+            height: 3px;
+            width: 200px;
             right: -200px;
+            bottom: 0px;
+            background: linear-gradient(to left, rgba(0, 0, 0, 0), #f6e58d);
+            border-top-left-radius: 1px;
+            border-bottom-left-radius: 1px;
+            animation: span3 2s linear infinite;
+            animation-delay: 3s;
           }
 
-          100% {
-            right: 200px;
+          @keyframes span3 {
+            0% {
+              right: -200px;
+            }
+
+            100% {
+              right: 200px;
+            }
           }
-        }
 
-        span:nth-child(4) {
-          height: 70px;
-          width: 3px;
-          bottom: -70px;
-          left: 0px;
-          background: linear-gradient(to top, rgba(0, 0, 0, 0), #f6e58d);
-          border-top-right-radius: 1px;
-          border-top-left-radius: 1px;
-          animation: span4 2s linear infinite;
-          animation-delay: 4s;
-        }
-
-        @keyframes span4 {
-          0% {
+          span:nth-child(4) {
+            height: 70px;
+            width: 3px;
             bottom: -70px;
+            left: 0px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0), #f6e58d);
+            border-top-right-radius: 1px;
+            border-top-left-radius: 1px;
+            animation: span4 2s linear infinite;
+            animation-delay: 4s;
           }
 
-          100% {
-            bottom: 70px;
+          @keyframes span4 {
+            0% {
+              bottom: -70px;
+            }
+
+            100% {
+              bottom: 70px;
+            }
+          }
+        }
+      }
+
+      img {
+        max-width: 36rem;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .resumen_historia {
+    display: grid;
+    grid-template-rows: 5rem 10rem 12rem 21rem 32rem;
+    height: auto;
+    max-width: 32rem;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+    gap: 1.5rem;
+
+    h2 {
+      font-family: 'great_vibesregular';
+      text-align: center;
+      margin: 2rem;
+      font-size: 2rem;
+      height: 2rem;
+      color: #555555;
+    }
+
+    p {
+      max-width: 29rem;
+      margin: 0 auto;
+      font-size: 1.6rem;
+      font-family: 'ralewaylight';
+      text-align: justify;
+      color: #212529;
+    }
+
+    img {
+      max-width: 100%;
+      width: 36rem;
+    }
+
+    .satisfaccion_helado {
+      position: relative;
+      text-align: center;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+      p {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: transparent;
+        max-width: 100%;
+        width: 25rem;
+        color: #292828;
+      }
+    }
+  }
+
+  .container-recomendacion_heladeria {
+    max-width: 36rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    h3 {
+      width: 35rem;
+      height: 5rem;
+      padding: 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    .container-cards {
+      max-width: 32rem;
+      display: grid;
+      grid-template-rows: repeat(3, 20rem);
+      gap: 2rem;
+      .ambiente{
+        img{
+          width: 27rem;
+          margin-left: 2rem;
+        }
+      }
+    }
+  }
+
+  .container_productos{
+    background-color: #f1f1f1;
+    width: inherit;
+    height: 80rem;
+    .titulo-productos{
+      display: flex;
+      flex-direction: column;
+      width: 20rem;
+      margin: 0 auto;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+      h3 {
+        margin-top: 4rem;
+        text-transform: capitalize;
+        font-size: 3rem;
+        text-align: center;
+        font-weight: 300;
+        font-family: 'great_vibesregular';
+      }
+      img{
+        margin: 0 auto;
+      }
+    }
+    .navegacion_resumida{
+      width: 30rem;
+      background-color:#f1f1f1;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+      ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 2rem;
+        li{
+          display: list-item;
+          a{
+            text-decoration: none;
           }
         }
       }
     }
-
-    img {
-      max-width: 36rem;
-      margin-top: 15rem;
-    }
-  }
-
-  h2 {
-    text-align: center;
   }
 
   .container_helados {
@@ -398,4 +527,78 @@ footer {
       padding-left: 15px;
     }
   }
+}
+
+.cards {
+  position: relative;
+  cursor: pointer;
+  max-width: 100%;
+  width: 32rem;
+  background-color: #F1ECE6;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    position: absolute;
+    right: 40%;
+    font-family: 'poppinssemibold';
+    text-shadow: 1px 1px 3px #fff;
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+
+  img {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 18rem;
+    margin-left: 7rem;
+  }
+}
+.cards::before,
+.cards::after{
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  background-color: lightblue;
+  transition: all 0.5s;
+}
+
+.cards::before{
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+.cards::after{
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100% 0 15px;
+}
+
+.cards:hover::before,
+.cards:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.calidad_helados:hover:after {
+  content: "Helados artesanales de alta calidad";
+}
+
+.sabores_helados:hover:after {
+  content: "Helados con variedad de sabores";
+}
+
+.ambiente:hover:after {
+  content: "Un ambiente acogedor y agradable";
 }
