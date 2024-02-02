@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Se declara la función como async
     async function obtenerHelados() {
         // Se obtiene el archivo JSON
-        const respuesta = await fetch("./helados_de_la_casa.json");
+        const respuesta = await fetch("./json/helados_de_la_casa.json");
         // Se convierte la respuesta en un objeto JSON
         const datos = await respuesta.json();
         // Se devuelve el objeto JSON

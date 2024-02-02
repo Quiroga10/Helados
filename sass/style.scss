@@ -393,6 +393,7 @@ main {
     flex-direction: column;
     align-items: center;
     margin-bottom: 2rem;
+
     h3 {
       width: 35rem;
       height: 5rem;
@@ -405,8 +406,9 @@ main {
       display: grid;
       grid-template-rows: repeat(3, 20rem);
       gap: 2rem;
-      .ambiente{
-        img{
+
+      .ambiente {
+        img {
           width: 27rem;
           margin-left: 2rem;
         }
@@ -414,17 +416,19 @@ main {
     }
   }
 
-  .container_productos{
+  .container_productos {
     background-color: #f1f1f1;
     width: inherit;
-    height: 80rem;
-    .titulo-productos{
+    height: 100rem;
+
+    .titulo-productos {
       display: flex;
       flex-direction: column;
       width: 20rem;
       margin: 0 auto;
       gap: 1.5rem;
       margin-bottom: 2rem;
+
       h3 {
         margin-top: 4rem;
         text-transform: capitalize;
@@ -432,25 +436,46 @@ main {
         text-align: center;
         font-weight: 300;
         font-family: 'great_vibesregular';
+        color: #212529;
       }
-      img{
+
+      img {
         margin: 0 auto;
       }
     }
-    .navegacion_resumida{
+
+    .navegacion_resumida {
       width: 30rem;
-      background-color:#f1f1f1;
+      height: 21rem;
+      background-color: #f1f1f1;
       padding-top: 4rem;
       padding-bottom: 4rem;
-      ul{
+
+      ul {
         display: flex;
         flex-wrap: wrap;
         list-style: none;
         gap: 2rem;
-        li{
+
+        li {
           display: list-item;
-          a{
+
+          .active {
+            color: #510b0b;
+            background: transparent;
+          }
+
+          a {
+            color: #9b9991;
             text-decoration: none;
+            font-family: 'ralewaysemibold';
+            transition: all .2s ease-in-out;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+          }
+
+          a:hover {
+            color: #510b0b;
           }
         }
       }
@@ -529,6 +554,88 @@ footer {
   }
 }
 
+
+//card helados con sus sabores
+.container_seleccion-opciones {
+  width: 320px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.opcion_seleccionada {
+  position: relative;
+  width: 32rem;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
+  grid-template-rows: repeat(3,176px);
+  gap: 1rem;
+}
+
+.face{
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.container_card-uno {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  background-color: #510b0b;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border: 5px solid #bbbbbb;
+  border-radius: 10px;
+  font-size: 24px;
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+  text-align: center;
+}
+.container_card-uno:hover{
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.container_card-dos {
+  position: absolute;
+  top: 0;
+  width: 15rem;
+  height: 15rem;
+  transform: perspective(600px) rotateY(180deg);
+  background-color: #F08A5D;
+  color: #f3f3f3;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 15px 10px #000;
+  .imagen_sabor {
+    width: 10rem;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.container_card-total:nth-child(3) .container_card-dos{
+  top: 18rem;
+}
+.container_card-total:nth-child(4) .container_card-dos{
+  top: 18rem;
+}
+.container_card-total:nth-child(5) .container_card-dos{
+  top: 37rem;
+}
+.container_card-total:nth-child(6) .container_card-dos{
+  top: 37rem;
+}
+
+//card-helados con precio
 .cards {
   position: relative;
   cursor: pointer;
@@ -556,8 +663,9 @@ footer {
     margin-left: 7rem;
   }
 }
+
 .cards::before,
-.cards::after{
+.cards::after {
   position: absolute;
   content: "";
   width: 20%;
@@ -572,12 +680,13 @@ footer {
   transition: all 0.5s;
 }
 
-.cards::before{
+.cards::before {
   top: 0;
   right: 0;
   border-radius: 0 15px 0 100%;
 }
-.cards::after{
+
+.cards::after {
   bottom: 0;
   left: 0;
   border-radius: 0 100% 0 15px;

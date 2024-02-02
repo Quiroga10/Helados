@@ -1,0 +1,38 @@
+[
+    {
+        "nombre": "Chocolate",
+        "opcion": "sabor",
+        "imagen": "./assets/img/sabores/sabor_chocolate.webp",
+        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+    },
+    {
+        "nombre": "Vainilla",
+        "opcion": "sabor",
+        "imagen": "./assets/img/sabores/sabor_vainilla.webp",
+        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+    },
+    {
+        "nombre": "Fresa",
+        "opcion": "sabor",
+        "imagen": "./assets/img/sabores/sabor_fresas.webp",
+        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+    },
+    {
+        "nombre": "Menta",
+        "opcion": "sabor",
+        "imagen": "./assets/img/sabores/sabor_menta.webp",
+        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+    },
+    {
+        "nombre": "Dulce de leche",
+        "opcion": "sabor",
+        "imagen": "./assets/img/sabores/sabor_dulce_leche.webp",
+        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+    },
+    {
+        "nombre": "Piña",
+        "opcion": "sabor",
+        "imagen": "./assets/img/sabores/sabor_chocolate.webp",
+        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+    }
+]
