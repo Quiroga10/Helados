@@ -358,7 +358,7 @@ main .container-recomendacion_heladeria .container-cards .ambiente img {
 main .container_productos {
   background-color: #f1f1f1;
   width: inherit;
-  height: 100rem;
+  height: 123rem;
 }
 main .container_productos .titulo-productos {
   display: flex;
@@ -479,6 +479,71 @@ footer .container_footer .redes-sociales {
   width: 320px;
   height: auto;
   margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.container_btn-opciones {
+  width: 20rem;
+  height: 4rem;
+  margin: 0 auto;
+}
+.container_btn-opciones button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: rgb(115, 117, 116) solid 0.15em;
+  border-radius: 0.25em;
+  color: rgb(74, 77, 76);
+  cursor: pointer;
+  overflow: hidden;
+  transition: border 300ms, color 300ms;
+  user-select: none;
+  width: inherit;
+  height: 3rem;
+  padding: 1rem;
+}
+.container_btn-opciones button a {
+  z-index: 1;
+  text-decoration: none;
+  margin: 0 auto;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #171717;
+}
+.container_btn-opciones button:hover {
+  color: #212121;
+}
+.container_btn-opciones button:active {
+  border-color: rgb(59, 61, 61);
+}
+.container_btn-opciones button::after,
+.container_btn-opciones button::before {
+  content: "";
+  position: absolute;
+  width: 25rem;
+  aspect-ratio: 1;
+  background: linear-gradient(to left top, #c32c71 50%, #b33771 50%);
+  border-radius: 50%;
+  transition: transform 500ms, background 300ms;
+}
+.container_btn-opciones button::before {
+  left: 0;
+  transform: translateX(-18em);
+}
+.container_btn-opciones button::after {
+  right: 0;
+  transform: translateX(18em);
+}
+.container_btn-opciones button:hover:before {
+  transform: translateX(-1em);
+}
+.container_btn-opciones button:hover:after {
+  transform: translateX(1em);
+}
+.container_btn-opciones button:active:before,
+.container_btn-opciones button:active:after {
+  background: rgb(71, 71, 71);
 }
 
 .opcion_seleccionada {
@@ -550,6 +615,16 @@ footer .container_footer .redes-sociales {
 .container_card-total:nth-child(5) .container_card-dos,
 .container_card-total:nth-child(6) .container_card-dos {
   top: 32rem;
+}
+
+.container_card-total:nth-child(7) .container_card-dos,
+.container_card-total:nth-child(8) .container_card-dos {
+  top: 48rem;
+}
+
+.container_card-total:nth-child(9) .container_card-dos,
+.container_card-total:nth-child(10) .container_card-dos {
+  top: 64rem;
 }
 
 .cards {

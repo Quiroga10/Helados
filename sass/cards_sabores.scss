@@ -12,19 +12,95 @@ $card-width-height: 15rem;
   width: 320px;
   height: auto;
   margin: 0 auto;
+  margin-bottom: 2rem;
 }
+
+.container_btn-opciones {
+  width: 20rem;
+  height: 4rem;
+  margin: 0 auto;
+
+  button {
+    all: unset;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: rgb(115, 117, 116) solid 0.15em;
+    border-radius: 0.25em;
+    color: rgb(74, 77, 76);
+    cursor: pointer;
+    overflow: hidden;
+    transition: border 300ms, color 300ms;
+    user-select: none;
+    width: inherit;
+    height: 3rem;
+    padding: 1rem;
+
+    a {
+      z-index: 1;
+      text-decoration: none;
+      margin: 0 auto;
+      font-size: 1.5em;
+      font-weight: 600;
+      color: #171717;
+    }
+  }
+
+  button:hover {
+    color: #212121;
+  }
+
+  button:active {
+    border-color: rgb(59, 61, 61);
+  }
+
+  button::after,
+  button::before {
+    content: "";
+    position: absolute;
+    width: 25rem;
+    aspect-ratio: 1;
+    background: linear-gradient(to left top, #c32c71 50%, #b33771 50%);
+    border-radius: 50%;
+    transition: transform 500ms, background 300ms;
+  }
+
+  button::before {
+    left: 0;
+    transform: translateX(-18em);
+  }
+
+  button::after {
+    right: 0;
+    transform: translateX(18em);
+  }
+
+  button:hover:before {
+    transform: translateX(-1em);
+  }
+
+  button:hover:after {
+    transform: translateX(1em);
+  }
+
+  button:active:before,
+  button:active:after {
+    background: rgb(71, 71, 71);
+  }
+}
+
 
 .opcion_seleccionada {
   position: relative;
   width: 32rem;
   height: auto;
   display: grid;
-  grid-template-columns: repeat(2,2fr);
-  grid-template-rows: repeat(3,1fr);
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 1rem;
 }
 
-.face{
+.face {
   backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
@@ -50,7 +126,7 @@ $card-width-height: 15rem;
   text-align: center;
 }
 
-.container_card-uno:hover{
+.container_card-uno:hover {
   transform: perspective(600px) rotateY(180deg);
 }
 
@@ -68,6 +144,7 @@ $card-width-height: 15rem;
   justify-content: space-between;
   text-align: center;
   box-shadow: 0 15px 10px #000;
+
   .imagen_sabor {
     width: 10rem;
     height: auto;
@@ -77,13 +154,23 @@ $card-width-height: 15rem;
 
 
 .container_card-total:nth-child(3) .container_card-dos,
-.container_card-total:nth-child(4) .container_card-dos{
+.container_card-total:nth-child(4) .container_card-dos {
   top: $top-imagen-sabor;
 }
 
 .container_card-total:nth-child(5) .container_card-dos,
-.container_card-total:nth-child(6) .container_card-dos{
+.container_card-total:nth-child(6) .container_card-dos {
   top: $top-imagen-sabor*2;
+}
+
+.container_card-total:nth-child(7) .container_card-dos,
+.container_card-total:nth-child(8) .container_card-dos {
+  top: $top-imagen-sabor*3;
+}
+
+.container_card-total:nth-child(9) .container_card-dos,
+.container_card-total:nth-child(10) .container_card-dos {
+  top: $top-imagen-sabor*4;
 }
 
 //card-helados con precio

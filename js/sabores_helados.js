@@ -64,6 +64,5 @@ function mostrarSabores(sabores){
 
         opcionSeleccionada.appendChild(containerCardTotal);
     });
-
+    opcionSeleccionada.appendChild(buttonVerSabores);
 }
-

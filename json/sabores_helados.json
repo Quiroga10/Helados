@@ -34,5 +34,29 @@
         "opcion": "sabor",
         "imagen": "./assets/img/sabores/sabor_piña.webp",
         "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+    },
+    {
+        "nombre": "Mango",
+        "opcion": "sabor",
+        "imagen": "./assets/img/sabores/sabor_mango.webp",
+        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+    },
+    {
+        "nombre": "Arandano",
+        "opcion": "sabor",
+        "imagen": "./assets/img/sabores/sabor_arandano.webp",
+        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+    },
+    {
+        "nombre": "Frambuesa",
+        "opcion": "sabor",
+        "imagen": "./assets/img/sabores/sabor_frambuesa.webp",
+        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+    },
+    {
+        "nombre": "Platano",
+        "opcion": "sabor",
+        "imagen": "./assets/img/sabores/sabor_platano.webp",
+        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
     }
 ]
