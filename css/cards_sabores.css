@@ -332,6 +332,9 @@ main .resumen_historia .satisfaccion_helado p {
   background-color: transparent;
   max-width: 100%;
   width: 25rem;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
   color: #292828;
 }
 main .container-recomendacion_heladeria {
