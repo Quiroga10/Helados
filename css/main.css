@@ -206,6 +206,9 @@ main .resumen_historia p {
 main .resumen_historia img {
   max-width: 100%;
   width: 36rem;
+  height: 21rem;
+  margin-top: 2rem;
+  border-radius: 10%;
 }
 main .resumen_historia .satisfaccion_helado {
   position: relative;
