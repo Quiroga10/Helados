@@ -350,8 +350,9 @@ main .container-recomendacion_heladeria .container-cards {
   gap: 2rem;
 }
 main .container-recomendacion_heladeria .container-cards .ambiente img {
-  width: 27rem;
-  margin-left: 2rem;
+  width: 15rem;
+  height: 15rem;
+  margin: 0 auto;
 }
 main .container_productos {
   background-color: #f1f1f1;
