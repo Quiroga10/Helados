@@ -32,7 +32,7 @@
     {
         "nombre": "Piña",
         "opcion": "sabor",
-        "imagen": "./assets/img/sabores/sabor_chocolate.webp",
+        "imagen": "./assets/img/sabores/sabor_piña.webp",
         "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
     }
 ]

@@ -1,0 +1,36 @@
+footer {
+  min-width: 32rem;
+  max-width: 36rem;
+  background-image: url("../assets/img/imagen_de_fondo_de_una_heladeria.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-color: rgb(20, 10, 8);
+  height: auto;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+footer .container_footer {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+footer .container_footer .info-contacto {
+  text-align: center;
+}
+footer .container_footer .info-contacto,
+footer .container_footer .ubicacion,
+footer .container_footer .redes-sociales {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*# sourceMappingURL=footer.css.map */

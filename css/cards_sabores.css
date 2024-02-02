@@ -1,0 +1,629 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+nav {
+  background-color: #332d28;
+  min-width: 32rem;
+  max-width: 36rem;
+  width: 100%;
+  height: 4rem;
+  margin: 0 auto;
+}
+nav .container_navegacion {
+  list-style: none;
+  padding: 1rem;
+}
+nav .container_navegacion .navegacion_mobile {
+  display: flex;
+  justify-content: space-between;
+}
+nav .container_navegacion .navegacion_opciones {
+  display: none;
+}
+nav .container_navegacion li a {
+  text-decoration: none;
+  color: #b2b2b2;
+  font-size: 1.2rem;
+}
+
+header {
+  position: relative;
+  min-width: 32rem;
+  max-width: 36rem;
+  margin: 0 auto;
+  height: 40vh;
+  border-bottom: 0.2rem solid rgb(255, 255, 255);
+}
+header img {
+  width: 12rem;
+  max-width: 100%;
+  position: absolute;
+  top: 15%;
+  left: 62%;
+  transform: translateX(-62%);
+  animation: fadeIn 1s ease-in forwards, growth 1s 1s ease-in forwards, fadeOut 1s 2s ease-out forwards, logoAnimation 500ms 3s ease-in forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  20%, 100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  20%, 100% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+}
+@keyframes growth {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes logoAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+header video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+main {
+  min-width: 32rem;
+  max-width: 36rem;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+main .container_bienvenida {
+  max-width: 36rem;
+  height: 25rem;
+  margin-bottom: 0rem;
+  display: flex;
+  place-items: center;
+  place-content: center;
+  font-family: "great_vibesregular";
+  color: #fff;
+  font-style: normal;
+  text-shadow: 1px 1px 6px #000;
+  background-image: url("../assets/img/imagen_de_fondo_de_una_heladeria.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+main .container_bienvenida b {
+  white-space: nowrap;
+  font-weight: bolder;
+  font-size: 2.4rem;
+  line-height: 1.2;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+main .container_delivery {
+  max-width: 36rem;
+  height: 74rem;
+  margin-bottom: 2rem;
+  background-color: #FFBA00;
+}
+main .container_delivery .info_delivery {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0 auto;
+  max-width: 36rem;
+  height: auto;
+  font-family: "poppinsregular";
+}
+main .container_delivery .info_delivery h2 {
+  margin-top: 4rem;
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+main .container_delivery .info_delivery P {
+  font-size: 2.8rem;
+  text-align: center;
+  line-height: 2;
+  color: white;
+}
+main .container_delivery .button_imagen-delivery {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+main .container_delivery .button_imagen-delivery .wrapper {
+  transform: translate(-50%, -50%);
+  width: 11rem;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+main .container_delivery .button_imagen-delivery .wrapper button {
+  width: 20rem;
+  height: 7rem;
+  background: linear-gradient(to left top, #c32c71 50%, #b33771 50%);
+  border-style: none;
+  color: #fff;
+  font-size: 2.3rem;
+  letter-spacing: 0.3rem;
+  font-family: "poppinsregular";
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  padding: 0px;
+  overflow: hidden;
+  transition: all 0.5s;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}
+main .container_delivery .button_imagen-delivery .wrapper button:hover {
+  transition: all 0.5s;
+  transform: rotate(-3deg) scale(1.1);
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+}
+main .container_delivery .button_imagen-delivery .wrapper button span {
+  position: absolute;
+  display: block;
+}
+main .container_delivery .button_imagen-delivery .wrapper button:hover {
+  animation-play-state: paused;
+}
+main .container_delivery .button_imagen-delivery .wrapper button span:nth-child(1) {
+  height: 0.3rem;
+  width: 20rem;
+  top: 0px;
+  left: -20rem;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), #F0EDCF);
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  animation: span1 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes span1 {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 200px;
+  }
+}
+main .container_delivery .button_imagen-delivery .wrapper button span:nth-child(2) {
+  height: 7rem;
+  width: 0.3rem;
+  top: -7rem;
+  right: 0px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #F0EDCF);
+  border-bottom-left-radius: 1px;
+  border-bottom-right-radius: 1px;
+  animation: span2 2s linear infinite;
+  animation-delay: 2s;
+}
+@keyframes span2 {
+  0% {
+    top: -70px;
+  }
+  100% {
+    top: 70px;
+  }
+}
+main .container_delivery .button_imagen-delivery .wrapper button span:nth-child(3) {
+  height: 3px;
+  width: 200px;
+  right: -200px;
+  bottom: 0px;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), #f6e58d);
+  border-top-left-radius: 1px;
+  border-bottom-left-radius: 1px;
+  animation: span3 2s linear infinite;
+  animation-delay: 3s;
+}
+@keyframes span3 {
+  0% {
+    right: -200px;
+  }
+  100% {
+    right: 200px;
+  }
+}
+main .container_delivery .button_imagen-delivery .wrapper button span:nth-child(4) {
+  height: 70px;
+  width: 3px;
+  bottom: -70px;
+  left: 0px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), #f6e58d);
+  border-top-right-radius: 1px;
+  border-top-left-radius: 1px;
+  animation: span4 2s linear infinite;
+  animation-delay: 4s;
+}
+@keyframes span4 {
+  0% {
+    bottom: -70px;
+  }
+  100% {
+    bottom: 70px;
+  }
+}
+main .container_delivery .button_imagen-delivery img {
+  max-width: 36rem;
+  margin: 0 auto;
+}
+main .resumen_historia {
+  display: grid;
+  grid-template-rows: 5rem 10rem 12rem 21rem 32rem;
+  height: auto;
+  max-width: 32rem;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  gap: 1.5rem;
+}
+main .resumen_historia h2 {
+  font-family: "great_vibesregular";
+  text-align: center;
+  margin: 2rem;
+  font-size: 2rem;
+  height: 2rem;
+  color: #555555;
+}
+main .resumen_historia p {
+  max-width: 29rem;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  font-family: "ralewaylight";
+  text-align: justify;
+  color: #212529;
+}
+main .resumen_historia img {
+  max-width: 100%;
+  width: 36rem;
+}
+main .resumen_historia .satisfaccion_helado {
+  position: relative;
+  text-align: center;
+}
+main .resumen_historia .satisfaccion_helado img {
+  width: 100%;
+  height: auto;
+}
+main .resumen_historia .satisfaccion_helado p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  max-width: 100%;
+  width: 25rem;
+  color: #292828;
+}
+main .container-recomendacion_heladeria {
+  max-width: 36rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+main .container-recomendacion_heladeria h3 {
+  width: 35rem;
+  height: 5rem;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+main .container-recomendacion_heladeria .container-cards {
+  max-width: 32rem;
+  display: grid;
+  grid-template-rows: repeat(3, 20rem);
+  gap: 2rem;
+}
+main .container-recomendacion_heladeria .container-cards .ambiente img {
+  width: 24rem;
+  height: 20rem;
+  margin: 0 auto;
+}
+main .container_productos {
+  background-color: #f1f1f1;
+  width: inherit;
+  height: 100rem;
+}
+main .container_productos .titulo-productos {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  margin: 0 auto;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+main .container_productos .titulo-productos h3 {
+  margin-top: 4rem;
+  text-transform: capitalize;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 300;
+  font-family: "great_vibesregular";
+  color: #212529;
+}
+main .container_productos .titulo-productos img {
+  margin: 0 auto;
+}
+main .container_productos .navegacion_resumida {
+  width: 30rem;
+  height: 21rem;
+  background-color: #f1f1f1;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+main .container_productos .navegacion_resumida ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 2rem;
+}
+main .container_productos .navegacion_resumida ul li {
+  display: list-item;
+}
+main .container_productos .navegacion_resumida ul li .active {
+  color: #510b0b;
+  background: transparent;
+}
+main .container_productos .navegacion_resumida ul li a {
+  color: #9b9991;
+  text-decoration: none;
+  font-family: "ralewaysemibold";
+  transition: all 0.2s ease-in-out;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+main .container_productos .navegacion_resumida ul li a:hover {
+  color: #510b0b;
+}
+main .container_helados {
+  width: 30rem;
+  max-width: 50rem;
+  margin: 0 auto;
+}
+main .container_helados .lista_helados {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  list-style: none;
+}
+main .container_helados .lista_helados .item_helados {
+  list-style: none;
+  margin: 0 auto;
+}
+main .container_helados .lista_helados .item_helados img {
+  width: 20rem;
+  height: 20rem;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+main .container_helados .lista_helados .item_helados .container_info_helados {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+footer {
+  min-width: 32rem;
+  max-width: 36rem;
+  background-image: url("../assets/img/imagen_de_fondo_de_una_heladeria.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: bottom;
+  background-color: rgb(20, 10, 8);
+  height: auto;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+footer .container_footer {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+footer .container_footer .info-contacto {
+  text-align: center;
+}
+footer .container_footer .info-contacto,
+footer .container_footer .ubicacion,
+footer .container_footer .redes-sociales {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.container_seleccion-opciones {
+  width: 320px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.opcion_seleccionada {
+  position: relative;
+  width: 32rem;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.face {
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.container_card-uno {
+  position: relative;
+  width: 15rem;
+  height: 15rem;
+  background-color: #510b0b;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border: 5px solid #bbbbbb;
+  border-radius: 10px;
+  font-size: 24px;
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+  text-align: center;
+}
+
+.container_card-uno:hover {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.container_card-dos {
+  position: absolute;
+  top: 0;
+  width: 15rem;
+  height: 15rem;
+  transform: perspective(600px) rotateY(180deg);
+  background-color: #F08A5D;
+  color: #f3f3f3;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 15px 10px #000;
+}
+.container_card-dos .imagen_sabor {
+  width: 10rem;
+  height: auto;
+  margin: 0 auto;
+}
+
+.container_card-total:nth-child(3) .container_card-dos,
+.container_card-total:nth-child(4) .container_card-dos {
+  top: 16rem;
+}
+
+.container_card-total:nth-child(5) .container_card-dos,
+.container_card-total:nth-child(6) .container_card-dos {
+  top: 32rem;
+}
+
+.cards {
+  position: relative;
+  cursor: pointer;
+  max-width: 100%;
+  width: 32rem;
+  background-color: #F1ECE6;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards p {
+  position: absolute;
+  right: 40%;
+  font-family: "poppinssemibold";
+  text-shadow: 1px 1px 3px #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.cards img {
+  margin: 0 auto;
+  max-width: 100%;
+  width: 18rem;
+  margin-left: 7rem;
+}
+
+.cards::before,
+.cards::after {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  background-color: lightblue;
+  transition: all 0.5s;
+}
+
+.cards::before {
+  top: 0;
+  right: 0;
+  border-radius: 0 15px 0 100%;
+}
+
+.cards::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0 100% 0 15px;
+}
+
+.cards:hover::before,
+.cards:hover:after {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.calidad_helados:hover:after {
+  content: "Helados artesanales de alta calidad";
+}
+
+.sabores_helados:hover:after {
+  content: "Helados con variedad de sabores";
+}
+
+.ambiente:hover:after {
+  content: "Un ambiente acogedor y agradable";
+}
+
+/*# sourceMappingURL=cards_sabores.css.map */

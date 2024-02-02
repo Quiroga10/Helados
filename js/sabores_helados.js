@@ -61,6 +61,7 @@ function mostrarSabores(sabores){
         containerCardTotal.addEventListener('mouseleave', () => {
             containerCardDos.style.transform = "perspective(600px) rotateY(180deg)";
         });
+
         opcionSeleccionada.appendChild(containerCardTotal);
     });
 

@@ -1,0 +1,356 @@
+@use 'mixinsmain';
+
+main {
+    min-width: 32rem;
+    max-width: 36rem;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+    .container_bienvenida {
+        @include mixinsmain.container-properties(36rem,25rem,0rem);
+        display: flex;
+        place-items: center;
+        place-content: center;
+        font-family: 'great_vibesregular';
+        color: #fff;
+        font-style: normal;
+        text-shadow: 1px 1px 6px #000;
+        background-image: url("../assets/img/imagen_de_fondo_de_una_heladeria.webp");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        b {
+            white-space: nowrap;
+            font-weight: bolder;
+            font-size: 2.4rem;
+            line-height: 1.2;
+            letter-spacing: 0.2rem;
+            text-align: center;
+        }
+    }
+
+    .container_delivery {
+        @include mixinsmain.container-properties(36rem,74rem,2rem);
+        background-color: #FFBA00;
+
+        .info_delivery {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 0 auto;
+            max-width: 36rem;
+            height: auto;
+            font-family: 'poppinsregular';
+
+            h2 {
+                margin-top: 4rem;
+                font-size: 2rem;
+                font-weight: 600;
+                text-align: center;
+            }
+
+            P {
+                font-size: 2.8rem;
+                text-align: center;
+                line-height: 2;
+                color: white;
+            }
+        }
+
+        .button_imagen-delivery {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+
+            .wrapper {
+                transform: translate(-50%, -50%);
+                width: 11rem;
+                height: auto;
+                margin: 0 auto;
+                margin-top: 6rem;
+
+                button {
+                    @include mixinsmain.button-styles;
+                    span:nth-child(1) {
+                        height: 0.3rem;
+                        width: 20rem;
+                        top: 0px;
+                        left: -20rem;
+                        background: linear-gradient(to right, rgba(0, 0, 0, 0), #F0EDCF);
+                        border-top-right-radius: 1px;
+                        border-bottom-right-radius: 1px;
+                        animation: span1 2s linear infinite;
+                        animation-delay: 1s;
+                    }
+
+                    @keyframes span1 {
+                        0% {
+                            left: -200px
+                        }
+
+                        100% {
+                            left: 200px;
+                        }
+                    }
+
+                    span:nth-child(2) {
+                        height: 7rem;
+                        width: 0.3rem;
+                        top: -7rem;
+                        right: 0px;
+                        background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #F0EDCF);
+                        border-bottom-left-radius: 1px;
+                        border-bottom-right-radius: 1px;
+                        animation: span2 2s linear infinite;
+                        animation-delay: 2s;
+
+                    }
+
+                    @keyframes span2 {
+                        0% {
+                            top: -70px;
+                        }
+
+                        100% {
+                            top: 70px;
+                        }
+                    }
+
+                    span:nth-child(3) {
+                        height: 3px;
+                        width: 200px;
+                        right: -200px;
+                        bottom: 0px;
+                        background: linear-gradient(to left, rgba(0, 0, 0, 0), #f6e58d);
+                        border-top-left-radius: 1px;
+                        border-bottom-left-radius: 1px;
+                        animation: span3 2s linear infinite;
+                        animation-delay: 3s;
+                    }
+
+                    @keyframes span3 {
+                        0% {
+                            right: -200px;
+                        }
+
+                        100% {
+                            right: 200px;
+                        }
+                    }
+
+                    span:nth-child(4) {
+                        height: 70px;
+                        width: 3px;
+                        bottom: -70px;
+                        left: 0px;
+                        background: linear-gradient(to top, rgba(0, 0, 0, 0), #f6e58d);
+                        border-top-right-radius: 1px;
+                        border-top-left-radius: 1px;
+                        animation: span4 2s linear infinite;
+                        animation-delay: 4s;
+                    }
+
+                    @keyframes span4 {
+                        0% {
+                            bottom: -70px;
+                        }
+
+                        100% {
+                            bottom: 70px;
+                        }
+                    }
+                }
+            }
+
+            img {
+                max-width: 36rem;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .resumen_historia {
+        display: grid;
+        grid-template-rows: 5rem 10rem 12rem 21rem 32rem;
+        height: auto;
+        max-width: 32rem;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+        gap: 1.5rem;
+
+        h2 {
+            font-family: 'great_vibesregular';
+            text-align: center;
+            margin: 2rem;
+            font-size: 2rem;
+            height: 2rem;
+            color: #555555;
+        }
+
+        p {
+            max-width: 29rem;
+            margin: 0 auto;
+            font-size: 1.6rem;
+            font-family: 'ralewaylight';
+            text-align: justify;
+            color: #212529;
+        }
+
+        img {
+            max-width: 100%;
+            width: 36rem;
+        }
+
+        .satisfaccion_helado {
+            position: relative;
+            text-align: center;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            p {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: transparent;
+                max-width: 100%;
+                width: 25rem;
+                color: #292828;
+            }
+        }
+    }
+
+    .container-recomendacion_heladeria {
+        max-width: 36rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+
+        h3 {
+            width: 35rem;
+            height: 5rem;
+            padding: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .container-cards {
+            max-width: 32rem;
+            display: grid;
+            grid-template-rows: repeat(3, 20rem);
+            gap: 2rem;
+
+            .ambiente {
+                img {
+                    width: 24rem;
+                    height: 20rem;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    .container_productos {
+        background-color: #f1f1f1;
+        width: inherit;
+        height: 100rem;
+
+        .titulo-productos {
+            display: flex;
+            flex-direction: column;
+            width: 20rem;
+            margin: 0 auto;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+
+            h3 {
+                margin-top: 4rem;
+                text-transform: capitalize;
+                font-size: 3rem;
+                text-align: center;
+                font-weight: 300;
+                font-family: 'great_vibesregular';
+                color: #212529;
+            }
+
+            img {
+                margin: 0 auto;
+            }
+        }
+
+        .navegacion_resumida {
+            width: 30rem;
+            height: 21rem;
+            background-color: #f1f1f1;
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                list-style: none;
+                gap: 2rem;
+
+                li {
+                    display: list-item;
+
+                    .active {
+                        color: #510b0b;
+                        background: transparent;
+                    }
+
+                    a {
+                        color: #9b9991;
+                        text-decoration: none;
+                        font-family: 'ralewaysemibold';
+                        transition: all .2s ease-in-out;
+                        font-size: 1.4rem;
+                        text-transform: uppercase;
+                    }
+
+                    a:hover {
+                        color: #510b0b;
+                    }
+                }
+            }
+        }
+    }
+
+    .container_helados {
+        width: 30rem;
+        max-width: 50rem;
+        margin: 0 auto;
+
+        .lista_helados {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            list-style: none;
+
+            .item_helados {
+                list-style: none;
+                margin: 0 auto;
+
+                img {
+                    width: 20rem;
+                    height: 20rem;
+                    max-width: 100%;
+                    margin: 0 auto;
+                    margin-top: 1rem;
+                }
+
+                .container_info_helados {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 0.5rem;
+                }
+            }
+        }
+    }
+}

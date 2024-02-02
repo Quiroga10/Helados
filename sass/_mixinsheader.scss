@@ -1,0 +1,25 @@
+@mixin imageStyles {
+    width: 12rem;
+    max-width: 100%;
+    position: absolute;
+    top: 15%;
+    left: 62%;
+    transform: translateX(-62%);
+}
+
+@mixin imageAnimations {
+    animation: fadeIn 1s ease-in forwards,
+        growth 1s 1s ease-in forwards,
+        fadeOut 1s 2s ease-out forwards,
+        logoAnimation 500ms 3s ease-in forwards;
+}
+
+@mixin videoStyles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}

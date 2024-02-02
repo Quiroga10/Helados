@@ -1,0 +1,26 @@
+nav {
+  background-color: #332d28;
+  min-width: 32rem;
+  max-width: 36rem;
+  width: 100%;
+  height: 4rem;
+  margin: 0 auto;
+}
+nav .container_navegacion {
+  list-style: none;
+  padding: 1rem;
+}
+nav .container_navegacion .navegacion_mobile {
+  display: flex;
+  justify-content: space-between;
+}
+nav .container_navegacion .navegacion_opciones {
+  display: none;
+}
+nav .container_navegacion li a {
+  text-decoration: none;
+  color: #b2b2b2;
+  font-size: 1.2rem;
+}
+
+/*# sourceMappingURL=navbar.css.map */
