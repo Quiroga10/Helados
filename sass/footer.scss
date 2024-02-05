@@ -6,8 +6,9 @@ footer {
     background-attachment: fixed;
     background-position-x: center;
     background-position-y: bottom;
-    background-color: rgb(20, 10, 8);
+    background-color: rgb(231, 141, 14);
     height: auto;
+    margin: 0 auto;
     display: flex;
     color: white;
     align-items: center;
@@ -15,7 +16,29 @@ footer {
     flex-wrap: wrap;
     gap: 2rem;
 
+    .navegacion_opciones{
+        background-color: aqua;
+        width: 36rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        li{
+            width: 10rem;
+            height: 2rem;
+            background-color: rgb(25, 79, 74);
+            list-style: none;
+            margin: 0 auto;
+            text-align: center;
+            a{
+                color: #CC7D24;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+    }
+
     .container_footer {
+        background-color: aquamarine;
         width: 100%;
         padding-right: 15px;
         padding-left: 15px;
