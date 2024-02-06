@@ -3,7 +3,6 @@ main {
   max-width: 36rem;
   height: auto;
   margin: 0 auto;
-  margin-bottom: 2rem;
 }
 main .container_bienvenida {
   max-width: 36rem;
@@ -251,7 +250,7 @@ main .container-recomendacion_heladeria .container-cards {
   gap: 2rem;
 }
 main .container-recomendacion_heladeria .container-cards .ambiente img {
-  width: 24rem;
+  width: 32rem;
   height: 20rem;
   margin: 0 auto;
 }

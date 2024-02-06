@@ -5,7 +5,6 @@ main {
     max-width: 36rem;
     height: auto;
     margin: 0 auto;
-    margin-bottom: 2rem;
 
     .container_bienvenida {
         @include mixinsmain.container-properties(36rem,25rem,0rem);
@@ -253,7 +252,7 @@ main {
 
             .ambiente {
                 img {
-                    width: 24rem;
+                    width: 32rem;
                     height: 20rem;
                     margin: 0 auto;
                 }

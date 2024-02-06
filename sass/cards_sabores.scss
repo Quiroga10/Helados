@@ -111,7 +111,9 @@ $card-width-height: 15rem;
   position: relative;
   width: $card-width-height;
   height: $card-width-height;
-  background-color: #510b0b;
+  background-image: url(../assets/img/imagen_fondo-footer.webp);
+  background-repeat: round;
+  background-size: cover;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -136,9 +138,8 @@ $card-width-height: 15rem;
   width: $card-width-height;
   height: $card-width-height;
   transform: perspective(600px) rotateY(180deg);
-  background-color: #8d8383;
+  background-color: transparent;
   color: #f3f3f3;
-  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -146,9 +147,14 @@ $card-width-height: 15rem;
   box-shadow: 0 15px 10px #000;
 
   .imagen_sabor {
-    width: 10rem;
+    position: relative;
+    width: 15rem;
     height: auto;
     margin: 0 auto;
+  }
+  p{
+    position: absolute;
+    top: 50%;
   }
 }
 
