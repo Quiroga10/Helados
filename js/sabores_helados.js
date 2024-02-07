@@ -44,6 +44,7 @@ function mostrarSabores(sabores){
         let imagenSabor = document.createElement("img");
         imagenSabor.classList.add('imagen_sabor');
         imagenSabor.src = `${sabor.imagen}`;
+        imagenSabor.alt = `${sabor.alt}`;
         
         let descripcionSabor = document.createElement("p");
         descripcionSabor.textContent = `${sabor.descripcion}`;

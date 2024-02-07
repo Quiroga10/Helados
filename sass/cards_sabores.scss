@@ -148,7 +148,7 @@ $card-width-height: 15rem;
 
   .imagen_sabor {
     position: relative;
-    width: 15rem;
+    width: 100%;
     height: auto;
     margin: 0 auto;
   }
@@ -220,7 +220,8 @@ $card-width-height: 15rem;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
-  background-color: lightblue;
+  background-color: #243137;
+  color: #f3f3f3;
   transition: all 0.5s;
 }
 

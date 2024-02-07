@@ -7,22 +7,66 @@
 body {
   font-family: Roboto, sans-serif;
   font-weight: 300;
+  line-height: 1.6;
 }
 
 html {
   font-size: 62.5%;
 }
 
-h1, h2, h3, h4, h5, a {
-  font-family: "poppinssemibold";
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "poppinssemibold", sans-serif;
 }
 
 a {
+  color: inherit;
   background-color: transparent;
   text-decoration: none;
+  cursor: pointer;
 }
 
-ul {
+ul, ol {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "poppinssemibold", sans-serif;
+}
+
+a {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul, ol {
   list-style: none;
 }
 
@@ -49,6 +93,42 @@ nav .container_navegacion li a {
   text-decoration: none;
   color: #b2b2b2;
   font-size: 1.2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "poppinssemibold", sans-serif;
+}
+
+a {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul, ol {
+  list-style: none;
 }
 
 header {
@@ -115,6 +195,42 @@ header video {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "poppinssemibold", sans-serif;
+}
+
+a {
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul, ol {
+  list-style: none;
 }
 
 main {
@@ -467,22 +583,30 @@ main .container_helados .lista_helados .item_helados .container_info_helados {
 body {
   font-family: Roboto, sans-serif;
   font-weight: 300;
+  line-height: 1.6;
 }
 
 html {
   font-size: 62.5%;
 }
 
-h1, h2, h3, h4, h5, a {
-  font-family: "poppinssemibold";
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: inherit;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "poppinssemibold", sans-serif;
 }
 
 a {
+  color: inherit;
   background-color: transparent;
   text-decoration: none;
+  cursor: pointer;
 }
 
-ul {
+ul, ol {
   list-style: none;
 }
 
@@ -770,7 +894,7 @@ footer .container_footer .copyright {
 }
 .container_card-dos .imagen_sabor {
   position: relative;
-  width: 15rem;
+  width: 100%;
   height: auto;
   margin: 0 auto;
 }
@@ -837,7 +961,8 @@ footer .container_footer .copyright {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
-  background-color: lightblue;
+  background-color: #243137;
+  color: #f3f3f3;
   transition: all 0.5s;
 }
 
