@@ -36,7 +36,7 @@ footer {
                 cursor: pointer;
                 transition: all .2s ease-in-out;
                 text-transform: uppercase;
-                font-size: 1.5rem;
+                font-size: 1.6rem;
                 font-family: 'poppinsbold';
                 border-right: 1px solid #955b1b;
             }
@@ -73,15 +73,19 @@ footer {
             .contacto{
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 a{
+                    font-size: 1.6rem;
                     color: #ccc8c8;
                 }
             }
             .correo{
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 a{
                     color: #ccc8c8;
+                    font-size: 1.6rem;
                     margin-left: 0.2rem;
                 }
             }
@@ -104,6 +108,7 @@ footer {
                 margin: 0 auto;
                 a{
                     width: 20rem;
+                    font-size: 1.6rem;
                     margin: 0 auto;
                 }
             }
@@ -121,6 +126,7 @@ footer {
                     margin-top: 1rem;
                     a{
                         color: #ccc8c8;
+                        font-size: 1.6rem;
                         font-weight: 900;
                     }
                 }
@@ -137,8 +143,10 @@ footer {
             .container-redes{
                 display: flex;
                 justify-content: center;
+                align-items: center;
                 gap: 1rem;
                 a{
+                    font-size: 1.6rem;
                     font-weight: 900;
                     color: #ccc8c8;
                     font-family: 'poppinssemibold';

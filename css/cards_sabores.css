@@ -476,7 +476,7 @@ main .container-recomendacion_heladeria h3 {
   width: 35rem;
   height: 5rem;
   padding: 1.5rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 main .container-recomendacion_heladeria .container-cards {
   max-width: 32rem;
@@ -649,7 +649,7 @@ footer .navegacion_opciones li a {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-transform: uppercase;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-family: "poppinsbold";
   border-right: 1px solid #955b1b;
 }
@@ -685,16 +685,20 @@ footer .container_footer .info-contacto h5 {
 footer .container_footer .info-contacto .contacto {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 footer .container_footer .info-contacto .contacto a {
+  font-size: 1.6rem;
   color: #ccc8c8;
 }
 footer .container_footer .info-contacto .correo {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 footer .container_footer .info-contacto .correo a {
   color: #ccc8c8;
+  font-size: 1.6rem;
   margin-left: 0.2rem;
 }
 footer .container_footer .ubicacion {
@@ -717,6 +721,7 @@ footer .container_footer .ubicacion .container_local {
 }
 footer .container_footer .ubicacion .container_local a {
   width: 20rem;
+  font-size: 1.6rem;
   margin: 0 auto;
 }
 footer .container_footer .horario-atencion h5 {
@@ -731,6 +736,7 @@ footer .container_footer .horario-atencion ul li {
 }
 footer .container_footer .horario-atencion ul li a {
   color: #ccc8c8;
+  font-size: 1.6rem;
   font-weight: 900;
 }
 footer .container_footer .redes-sociales h5 {
@@ -743,9 +749,11 @@ footer .container_footer .redes-sociales h5 {
 footer .container_footer .redes-sociales .container-redes {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 footer .container_footer .redes-sociales .container-redes a {
+  font-size: 1.6rem;
   font-weight: 900;
   color: #ccc8c8;
   font-family: "poppinssemibold";
@@ -850,7 +858,7 @@ footer .container_footer .copyright {
   backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .container_card-uno {
@@ -899,8 +907,10 @@ footer .container_footer .copyright {
   margin: 0 auto;
 }
 .container_card-dos p {
+  width: 15rem;
   position: absolute;
-  top: 50%;
+  top: 10%;
+  font-size: 1.4rem;
 }
 
 .container_card-total:nth-child(3) .container_card-dos,
@@ -961,7 +971,7 @@ footer .container_footer .copyright {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
-  background-color: #243137;
+  background-color: rgb(85, 164, 201);
   color: #f3f3f3;
   transition: all 0.5s;
 }

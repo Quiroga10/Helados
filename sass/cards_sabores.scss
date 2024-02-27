@@ -104,7 +104,7 @@ $card-width-height: 15rem;
   backface-visibility: hidden;
   border-radius: 10px;
   overflow: hidden;
-  transition: .5s;
+  transition: .7s;
 }
 
 .container_card-uno {
@@ -153,8 +153,10 @@ $card-width-height: 15rem;
     margin: 0 auto;
   }
   p{
+    width: 15rem;
     position: absolute;
-    top: 50%;
+    top: 10%;
+    font-size: 1.4rem;
   }
 }
 
@@ -220,7 +222,7 @@ $card-width-height: 15rem;
   font-size: 25px;
   font-weight: bold;
   text-align: center;
-  background-color: #243137;
+  background-color: rgba(85 164 201);
   color: #f3f3f3;
   transition: all 0.5s;
 }

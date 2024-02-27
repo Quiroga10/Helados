@@ -3,65 +3,65 @@
         "nombre": "Chocolate",
         "opcion": "sabor",
         "imagen": "./assets/img/sabores/sabor_chocolate.webp",
-        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+        "descripcion": " Su intensidad profunda y suavidad seductora hacen que cada bocado sea una experiencia lujosa."
     },
     {
         "nombre": "Vainilla",
         "opcion": "sabor",
         "imagen": "./assets/img/sabores/sabor_vainilla.webp",
-        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+        "descripcion": "Su aroma reconfortante y su sabor suave añaden una dimensión acogedora a cualquier postre."
     },
     {
         "nombre": "Fresa",
         "opcion": "sabor",
         "imagen": "./assets/img/sabores/sabor_fresas.webp",
-        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+        "descripcion": "Su vibrante color y su dulzura natural la convierten en una elección refrescante y deliciosa."
     },
     {
         "nombre": "Menta",
         "opcion": "sabor",
         "imagen": "./assets/img/sabores/sabor_menta.webp",
-        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+        "descripcion": "Su carácter refrescante y su toque herbal agregan un giro refrescante a cualquier dulce o postre."
     },
     {
         "nombre": "Dulce de leche",
         "opcion": "sabor",
         "imagen": "./assets/img/sabores/sabor_dulce_leche.webp",
-        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+        "descripcion": "Su sabor cremoso y su dulzura caramelizada se combinan para crear una experiencia gustativa decadente."
     },
     {
         "nombre": "Piña",
         "opcion": "sabor",
         "imagen": "./assets/img/sabores/sabor_piña.webp",
         "alt": "imagen sabor a piña",
-        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+        "descripcion": "Su frescura tropical y su aroma embriagador añaden un toque exótico a cualquier postre."
     },
     {
         "nombre": "Mango",
         "opcion": "sabor",
         "imagen": "./assets/img/sabores/sabor_mango.webp",
         "alt": "imagen sabor a mango",
-        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+        "descripcion": "Su dulzura intensa y su aroma embriagador lo convierten en una opción irresistible para los amantes de las frutas tropicales."
     },
     {
         "nombre": "Arandano",
         "opcion": "sabor",
         "imagen": "./assets/img/sabores/sabor_arandano.webp",
         "alt": "imagen sabor a arandano",
-        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+        "descripcion": "Su tono vibrante y su frescura natural lo convierten en una elección audaz y deliciosa."
     },
     {
         "nombre": "Frambuesa",
         "opcion": "sabor",
         "imagen": "./assets/img/sabores/sabor_frambuesa.webp",
         "alt": "imagen sabor a frambuesa",
-        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+        "descripcion": " Su intensidad y su color vibrante hacen que cada bocado sea una experiencia deliciosa."
     },
     {
         "nombre": "Platano",
         "opcion": "sabor",
         "imagen": "./assets/img/sabores/sabor_platano.webp",
         "alt": "imagen sabor a platano",
-        "descripcion": "Sabor muy exquisito que combina con cualquier sabor"
+        "descripcion": " Su intensidad y su color vibrante hacen que cada bocado sea una experiencia deliciosa."
     }
 ]
