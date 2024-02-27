@@ -215,7 +215,7 @@ main .container_delivery .button_imagen-delivery img {
 }
 main .resumen_historia {
   display: grid;
-  grid-template-rows: 5rem 10rem 12rem 21rem 32rem;
+  grid-template-rows: 5rem 13rem 15rem 24rem 36rem;
   height: auto;
   max-width: 32rem;
   margin: 0 auto;
