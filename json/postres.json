@@ -1,0 +1,20 @@
+{
+    "postres": [
+        {
+            "nombre": "Tarta de Chocolate",
+            "foto": "./assets/img/sabores/sabor_chocolate.webp"
+        },
+        {
+            "nombre": "Helado de Vainilla",
+            "foto": "https://ejemplo.com/helado_de_vainilla.jpg"
+        },
+        {
+            "nombre": "Cheesecake de Fresa",
+            "foto": "https://ejemplo.com/cheesecake_de_fresa.jpg"
+        },
+        {
+            "nombre": "Brownie con Helado",
+            "foto": "https://ejemplo.com/brownie_con_helado.jpg"
+        }
+    ]
+}

@@ -140,17 +140,17 @@
         <img src="./assets/img/designe.png" alt="">
       </div>
       <nav class="navegacion_resumida">
-        <ul>
-          <li><a class="active" href="#">Sabores de helado</a></li>
-          <li><a href="#">Tamaños de helado</a></li>
-          <li><a href="#">Acompañamientos para helados</a></li>
-          <li><a href="#">Bebidas heladas</a></li>
-          <li><a href="#">Postres</a></li>
-          <li><a href="#">Waffles y crepes</a></li>
+        <ul id="lista-navegacion">
+          <li><a class="helado active" href="#" data-target="sabores">Sabores de helado</a></li>
+          <li><a class="helado" href="#" data-target="tamaños">Tamaños de helado</a></li>
+          <li><a class="helado" href="#" data-target="acompañamientos">Acompañamientos para helados</a></li>
+          <li><a class="helado" href="#" data-target="bebidas">Bebidas heladas</a></li>
+          <li><a class="helado" href="#" data-target="postres">Postres</a></li>
+          <li><a class="helado" href="#" data-target="waffles">Waffles y crepes</a></li>
         </ul>
       </nav>
       <div class="container_seleccion-opciones">
-        <div class="opcion_seleccionada">
+        <div id="opcion_seleccionada">
 
         </div>
       </div>
@@ -296,8 +296,8 @@
     </div>
   </footer>
   <script src="./js/bienvenido.js"></script>
+  <script src="./js/data_navegacion.js"></script>
   <script src="./js/sabores_helados.js"></script>
-  <!-- <script src="./js/helados.js"></script> -->
 </body>
 
 </html>

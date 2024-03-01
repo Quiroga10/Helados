@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', async () => {
     async function obtenerSabores(){
-        const respuesta = await fetch("./json/sabores_helados.json");
+        const respuesta = await fetch("./json/sabores.json");
         const datos = await respuesta.json();
         return datos;
     }
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 //funcion para mostrar los sabores
 function mostrarSabores(sabores){
     //Obtengo el contenedor
-    const opcionSeleccionada = document.querySelector(".opcion_seleccionada");
+    const opcionSeleccionada = document.querySelector("#opcion_seleccionada");
     
     sabores.forEach((sabor) => {
         const containerCardTotal = document.createElement("div");
@@ -65,5 +65,5 @@ function mostrarSabores(sabores){
 
         opcionSeleccionada.appendChild(containerCardTotal);
     });
-    opcionSeleccionada.appendChild(buttonVerSabores);
+    
 }
