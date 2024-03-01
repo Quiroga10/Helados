@@ -10,8 +10,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
     }
 
+    function limpiarContenidoAnterior() {
+        const opcionSeleccionada = document.querySelector(".opcion_seleccionada");
+        opcionSeleccionada.innerHTML = ''; // Limpiar contenido existente
+    }
+
     // Función para mostrar los sabores  
     function mostrarSabores() {
+        limpiarContenidoAnterior();
+
         obtenerSabores()
             .then(sabores => {
                 const opcionSeleccionada = document.querySelector(".opcion_seleccionada");
@@ -73,11 +80,13 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Llamar a mostrarSabores al cargar la página
     mostrarSabores();
 
-    // Agregar evento de clic al enlace de sabores
-    const saboresLink = document.querySelector('.helado.active');
-    saboresLink.addEventListener('click', (event) => {
-        event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
-        mostrarSabores(); // Mostrar sabores al hacer clic en el enlace
+    // Agregar evento de clic a todos los enlaces
+    const enlaces = document.querySelectorAll('a.helado');
+    enlaces.forEach(enlace => {
+        enlace.addEventListener('click', (event) => {
+            event.preventDefault(); // Prevenir el comportamiento predeterminado del enlace
+            mostrarSabores(); // Mostrar sabores al hacer clic en cualquier enlace
+        });
     });
 
 });
